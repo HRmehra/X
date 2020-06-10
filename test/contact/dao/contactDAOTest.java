@@ -21,7 +21,7 @@ class contactDAOTest {
 		dao =new ContactDAOimpl(dataSource);
 		
 		Contact contact = new Contact("rassell","r@gmail.com","12313");
-		int result = dao.save(contact);
+		int result = dao.saveOrUpdate(contact);
 		
 		assertTrue(result>0);
 	}

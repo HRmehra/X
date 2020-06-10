@@ -5,13 +5,12 @@ import java.util.List;
 import model.Contact;
 
 public interface contactDAO {
-	public int save(Contact contact);
 	
-	public int update(Contact contact);
+	public int  saveOrUpdate(Contact contact);
 	
-	public Contact get(Integer id);
+	public Contact get(int id);
 	
-	public int delete(Integer id);
+	public int delete(int id);
 	
 	public List<Contact> list();
 }

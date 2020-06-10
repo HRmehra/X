@@ -4,19 +4,19 @@ public class Contact {
 	private int id;
 	private String name;
 	private String email;
-	private String contact_no;
+	private String number;
 
-	public Contact(Integer id, String name, String email, String contact_no) {
+	public Contact(Integer id, String name, String email, String number) {
 		
-		this(name,email,contact_no);
+		this(name,email,number);
 		this.id = id;
 	}
 	
-	public Contact( String name, String email, String contact_no) {
+	public Contact( String name, String email, String number) {
 	
 		this.name = name;
 		this.email = email;
-		this.contact_no = contact_no;
+		this.number = number;
 	}
 
 	public Integer getId() {
@@ -43,12 +43,12 @@ public class Contact {
 		this.email = email;
 	}
 
-	public String getContact_no() {
-		return contact_no;
+	public String getnumber() {
+		return number;
 	}
 
-	public void setContact_no(String contact_no) {
-		this.contact_no = contact_no;
+	public void setnumber(String number) {
+		this.number = number;
 	}
 
 }
