@@ -1,11 +1,13 @@
 package register.model;
 
 public class Person {
+	
 	private String id;
 	private String name;
 	private String sername;
 	private String email;
 	private String address;
+	
 	public String getId() {
 		return id;
 	}

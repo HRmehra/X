@@ -57,7 +57,7 @@ public class PersonServlet extends HttpServlet {
 		person.setEmail(email);
 		
 		try {
-			personDao.registerEmployee(person);
+			personDao.registerPerson(person);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
