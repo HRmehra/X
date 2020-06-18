@@ -24,12 +24,12 @@
      <td><input type="text" name="sername" /></td>
     </tr>
     <tr>
-     <td>address</td>
-     <td><input type="text" name="address" /></td>
-    </tr>
-    <tr>
      <td>email</td>
      <td><input type="text" name="email" /></td>
+    </tr>
+    <tr>
+     <td>address</td>
+     <td><input type="text" name="address" /></td>
     </tr>
    </table>
    <input type="submit" value="Submit" />
