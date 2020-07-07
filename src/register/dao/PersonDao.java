@@ -1,5 +1,6 @@
 package register.dao;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -10,11 +11,11 @@ import register.model.Person;
 public class PersonDao {
 	
 	public int registerPerson(Person person) throws ClassNotFoundException {
-        String INSERT_USERS_SQL = ("INSERT INTO person (id, name, sername, address, email)" + "VALUES (?, ?, ?, ?, ?,?,?)" );
+        String INSERT_USERS_SQL = ("INSERT INTO person (id, name, sername, address, email)" + "VALUES (?,?,?,?,?)" );
 
         int result = 0;
         
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("org.postgresql.Driver");
 
         try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","1234");
 
